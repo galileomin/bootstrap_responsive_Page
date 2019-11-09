@@ -1,0 +1,199 @@
+.header {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #ccc;
+}
+.header .row {
+  height: 100%;
+  text-align: center;
+}
+.header .row > div:nth-of-type(-n+3) {
+  border-right: 1px solid #ccc;
+}
+.header .row > div:nth-of-type(-n+3) > .code {
+  position: relative;
+}
+.header .row > div:nth-of-type(-n+3) > .code > img {
+  display: none;
+  position: absolute;
+  height: 100px;
+}
+.header .row > div:nth-of-type(-n+3) > .code:hover > img {
+  display: block;
+}
+.header .row > div:nth-of-type(-n+3) > a {
+  color: black;
+  text-decoration: none;
+}
+.header .row > div:nth-last-of-type(1) > .btn-primary {
+  background-color: #e92322;
+  border-color: #e92322;
+}
+.header .row > div:nth-last-of-type(1) > .btn {
+  padding: 3px 15px;
+}
+.header .row > div:nth-last-of-type(1) > .btn-link {
+  text-decoration: none;
+  color: black;
+}
+.main_nav.navbar {
+  margin: 0;
+}
+.main_nav .navbar-brand {
+  height: 80px;
+  line-height: 50px;
+}
+.main_nav .navbar-nav > li > a {
+  line-height: 50px;
+  font-size: 16px;
+}
+.main_nav .navbar-nav li:hover {
+  background-color: #ddd;
+}
+.main_nav .navbar-toggle {
+  margin-top: 23px;
+}
+.info {
+  padding: 30px;
+}
+.info .icon {
+  font-size: 30px;
+}
+.info .row > div {
+  margin-top: 20px;
+}
+.info .row > div > a {
+  text-decoration: none;
+  color: #777;
+}
+.info .row > div > a:hover {
+  color: #e92322;
+}
+.reverse {
+  height: 60px;
+  line-height: 60px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.reverse .row > div > span {
+  font-size: 18px;
+}
+.reverse .row > div > a {
+  color: #777;
+  text-decoration: none;
+}
+.reverse .row > div > a:hover {
+  color: #e92322;
+}
+.article {
+  clear: both;
+  background-color: #eee;
+  padding: 20px;
+}
+.article .tab_parent {
+  overflow: hidden;
+  width: 100%;
+}
+.article .nav-tabs > li {
+  margin: 0 30px;
+}
+.article .nav-tabs > li > a {
+  line-height: 50px;
+  border: none;
+  background-color: transparent;
+  color: black;
+  border-bottom: 3px solid #eee;
+}
+.article .nav-tabs > li > a:hover,
+.article .nav-tabs > li a:focus {
+  color: #e92322;
+  border-bottom: 3px solid #e92322;
+}
+.article .nav-tabs > li.active > a,
+.article .nav-tabs > li.active a:hover,
+.article .nav-tabs > li.active a:focus {
+  border: none;
+  background-color: transparent;
+}
+.article .box {
+  height: 150px;
+  margin-top: 20px;
+  background-color: #fff;
+}
+.article .box.active {
+  background-color: red;
+}
+.article .box.active > .right > b,
+.article .box.active > .right sub,
+.article .box.active > .right p {
+  color: #fff;
+}
+.article .box.active > .right > .tip > span {
+  color: #fff;
+  border: 1px dashed #fff;
+}
+.article .box.active > .left {
+  color: #fff;
+}
+.article .left {
+  margin-right: 100px;
+  height: 150px;
+  border-right: 1px dashed #eee;
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+}
+.article .left .row .goods {
+  height: 100px;
+}
+.article .right {
+  width: 100px;
+  height: 150px;
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  text-align: center;
+  padding-top: 30px;
+}
+.article .right > .tip {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+}
+.article .right > .tip > span {
+  cursor: pointer;
+}
+.article .right > .tip > span:first-of-type {
+  color: red;
+  border: 1px solid red;
+}
+.article .right > .tip > span:last-of-type {
+  color: blue;
+  border: 1px solid blue;
+}
+.article .right > b {
+  font-size: 40px;
+  color: #e92322;
+}
+.article .right > sub {
+  color: #e92322;
+  bottom: 0;
+}
+.article .right::before,
+.article .right::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #eee;
+  position: absolute;
+  left: -5px;
+}
+.article .right::before {
+  top: -5px;
+}
+.article .right::after {
+  bottom: -5px;
+}

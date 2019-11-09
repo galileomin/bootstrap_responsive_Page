@@ -1,0 +1,229 @@
+
+// 头部
+.header{
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #ccc;
+    .row{
+       height: 100%;
+       text-align: center;
+        > div:nth-of-type(-n+3){
+           border-right: 1px solid #ccc;  
+           > .code{
+               position: relative;
+               > img{
+                   display: none;
+                   position: absolute;
+                   height: 100px;            
+               }
+               &:hover{
+                > img{
+                    display: block;
+                }
+               }
+           }
+           > a{
+            color: black;
+            text-decoration: none;
+           }
+            }
+        > div:nth-last-of-type(1){
+            > .btn-primary{
+                background-color: #e92322;
+                border-color: #e92322;
+            }
+            > .btn{
+                padding: 3px 15px;
+            }
+            > .btn-link{
+                text-decoration: none;
+                color: black;
+            }
+        }
+        }
+    }
+// 导航
+.main_nav{
+    &.navbar{
+        margin: 0;
+    }
+    .navbar-brand{
+     height: 80px;  
+     line-height: 50px;
+    }
+    .navbar-nav{
+        > li{
+            > a{
+                line-height: 50px;
+                font-size: 16px;        
+            }
+        }
+         li:hover{
+            background-color: #ddd;
+        }
+    }
+    .navbar-toggle{
+        margin-top: 23px;
+    }
+}
+// 信息
+.info{
+    padding: 30px;
+    .icon{
+        font-size: 30px;
+    }
+    .row{
+        > div{
+            margin-top: 20px;
+            > a{
+                text-decoration: none;
+                color: #777;
+            }
+            > a:hover{
+                color: #e92322;
+            }
+        }
+    }
+}
+// 预约
+.reverse{ 
+    height: 60px;
+    line-height: 60px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    .row{
+        > div{
+            >span{
+                font-size: 18px;
+            }
+            >a{
+                color: #777;
+                text-decoration: none;
+            }
+            >a:hover{
+                color: #e92322;
+            }
+        }
+    }
+}
+//商品
+.article{
+    clear: both;
+    background-color: #eee;
+    padding: 20px;
+    .tab_parent{
+        overflow: hidden;
+        width: 100%;
+    }
+    .nav-tabs{
+       > li{
+           margin: 0 30px;
+          >  a{
+                line-height: 50px;
+                border: none;    
+                background-color: transparent;
+                color: black;   
+                border-bottom: 3px solid #eee;
+            }
+          > a:hover,a:focus{
+            color: #e92322; 
+            border-bottom: 3px solid #e92322;  
+          }  
+           &.active{
+              > a,a:hover,a:focus{
+                  border: none;
+                  background-color: transparent;   
+              }
+           }
+        }
+    }
+    .box{
+        height: 150px;
+        margin-top: 20px;
+        background-color: #fff;
+        &.active{
+            background-color: red;
+            > .right{
+                >b,sub,p{
+                    color: #fff;
+                }
+                > .tip{
+                    >span{
+                        color: #fff;
+                        border: 1px dashed #fff;
+                    }
+                }
+            }
+            > .left{
+                color: #fff;
+            }
+        }
+        }
+        .left{
+            margin-right: 100px;
+            height: 150px;
+            border-right: 1px dashed #eee;
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+            .row{
+                .goods{
+                    height: 100px;
+                }
+            }
+
+        }
+        .right{
+            width: 100px;
+            height: 150px;
+            position: absolute;
+            right: 15px;
+            top: 20px;
+            text-align: center;
+            padding-top: 30px;
+            > .tip{
+                position: absolute;
+                width: 100%;
+                left: 50%;
+                top: 20px;
+                transform: translateX(-50%);
+                > span{
+                    cursor: pointer;
+                }
+                > span:first-of-type{
+                    color: red;
+                    border: 1px solid red;
+                }
+                > span:last-of-type{
+                    color: blue;
+                    border: 1px solid blue;
+                }
+            }
+            > b{
+                font-size: 40px;
+                color: #e92322;
+            }
+            >sub{
+                color: #e92322;
+                bottom: 0;
+            }
+            &::before,&::after{
+                content: "";
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #eee;
+                position: absolute;
+                left: -5px;              
+            }
+            &::before{
+                top: -5px;
+            }
+            &::after{
+                bottom: -5px;
+            }
+        }
+       
+    }
+
+// 
